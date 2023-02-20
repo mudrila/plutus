@@ -1,7 +1,7 @@
-import * as React from 'react';
-import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
 import createEmotionServer from '@emotion/server/create-instance';
-import theme, { roboto } from '../theme';
+import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
+import * as React from 'react';
+import theme, { inknutAntiqua } from '../theme';
 import createEmotionCache from '../theme/createEmotionCache';
 
 export default class Document extends NextDocument {
@@ -9,7 +9,7 @@ export default class Document extends NextDocument {
     return (
       <Html
         lang="en"
-        className={roboto.className}
+        className={inknutAntiqua.className}
       >
         <Head>
           <meta
@@ -18,7 +18,7 @@ export default class Document extends NextDocument {
           />
           <link
             rel="shortcut icon"
-            href="/favicon.ico"
+            href="/assets/favicon.ico"
           />
           <meta
             name="emotion-insertion-point"

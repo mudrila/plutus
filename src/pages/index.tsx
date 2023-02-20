@@ -1,20 +1,7 @@
-import Head from 'next/head';
+import PageTemplate from "@/components/templates/Page";
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Plutus App | Home</title>
-        <meta
-          name="description"
-          content="Web application for managing personal finances."
-        />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1"
-        />
-      </Head>
-      <main>Plutus</main>
-    </>
+    <PageTemplate title="Plutus App | Home">Hello there!</PageTemplate>
   );
 }
