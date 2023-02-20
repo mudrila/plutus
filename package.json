@@ -1,0 +1,47 @@
+{
+  "name": "plutus",
+  "version": "0.1.0",
+  "description": "Web and mobile application for managing personal finances",
+  "keywords": [
+    "React.js",
+    "Next.js",
+    "Finances",
+    "Investments",
+    "MUI"
+  ],
+  "private": true,
+  "license": "MIT",
+  "homepage": "https://github.com/mudrila/plutus",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mudrila/plutus.git"
+  },
+  "author": {
+    "name": "Kyrylo Klymenko",
+    "email": "klimenkomud@gmail.com",
+    "url": "https://www.linkedin.com/in/klimenkomud/"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.9",
+    "@next/font": "13.1.6",
+    "next": "13.1.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "@types/node": "18.14.0",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.1.6"
+  }
+}
