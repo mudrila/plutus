@@ -11,7 +11,7 @@
   ],
   "private": true,
   "license": "MIT",
-  "homepage": "https://github.com/mudrila/plutus",
+  "homepage": "https://github.com/mudrila/plutus/blob/main/README.md",
   "repository": {
     "type": "git",
     "url": "git@github.com:mudrila/plutus.git"
@@ -25,7 +25,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier --write src/"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -42,6 +43,8 @@
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "eslint": "8.34.0",
-    "eslint-config-next": "13.1.6"
+    "eslint-config-next": "13.1.6",
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "2.8.4"
   }
 }
