@@ -8,13 +8,13 @@ export enum DraggableType {
   FINANCIAL_GOAL = 'financial-goal',
 }
 
-interface ICard {
+interface ICard<EntityType extends IFinanceEntity> {
   onDrag?: () => void;
   onDrop?: () => void;
-  item: IFinanceEntity;
+  item: EntityType;
 }
 
-export default function Card({ item }: ICard) {
+export default function Card<EntityType extends IFinanceEntity>({ item }: ICard<EntityType>) {
   const [{ isDragging }, drag] = useDrag(() => ({
     type: item.draggableType,
     collect: monitor => ({
