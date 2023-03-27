@@ -1,7 +1,5 @@
-import PageTemplate from "@/components/templates/Page";
+import { HomePageLayout } from '@/components';
 
-export default function Home() {
-  return (
-    <PageTemplate title="Plutus App | Home">Hello there!</PageTemplate>
-  );
+export default function HomePage() {
+  return <HomePageLayout />;
 }

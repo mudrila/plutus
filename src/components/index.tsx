@@ -1,3 +1,5 @@
 import Header from './organisms/Header';
+import HomePageLayout from './pages/Home';
+import PageTemplate from './templates/Page';
 
-export { Header };
+export { Header, HomePageLayout, PageTemplate };

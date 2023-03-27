@@ -5,14 +5,14 @@ export type RouteMeta = {
   path: string;
   title: string;
   icon: ReactNode;
-  key: string
+  key: string;
 };
 
 const ROUTES = [
   {
     path: '/',
     title: 'Home',
-    key: "home",
+    key: 'home',
     icon: Home,
   },
 ];

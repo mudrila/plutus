@@ -22,11 +22,9 @@ export default function PageTemplate({ title, children }: IPageTemplate) {
       <Box
         component="main"
         paddingTop={8}
+        paddingLeft={8}
         minHeight="100vh"
         width="100%"
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
       >
         {children}
       </Box>

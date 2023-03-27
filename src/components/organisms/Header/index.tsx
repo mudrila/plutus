@@ -18,7 +18,10 @@ export default function Header() {
   return (
     <>
       <AppBar position="fixed">
-        <Toolbar sx={{ paddingLeft: 2}} disableGutters>
+        <Toolbar
+          sx={{ paddingLeft: 2 }}
+          disableGutters
+        >
           <Image
             src="assets/logo-icon-only.svg"
             alt="Logo"

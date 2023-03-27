@@ -6,7 +6,7 @@ import Head from 'next/head';
 import * as React from 'react';
 import theme from '../theme';
 import createEmotionCache from '../theme/createEmotionCache';
-import { INITIAL_STORE_STATE, StoreContext } from '@/store';
+import { StoreProvider } from '@/store';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -27,9 +27,9 @@ export default function App(props: AppProps) {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <StoreContext.Provider value={INITIAL_STORE_STATE}>
+        <StoreProvider>
           <Component {...pageProps} />
-        </StoreContext.Provider>
+        </StoreProvider>
       </ThemeProvider>
     </CacheProvider>
   );

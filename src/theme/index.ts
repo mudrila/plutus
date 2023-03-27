@@ -6,7 +6,7 @@ export const inknutAntiqua = Inknut_Antiqua({
   subsets: ['latin'],
   display: 'swap',
   fallback: ['Helvetica', 'Arial', 'sans-serif'],
-})
+});
 
 // Create a theme instance.
 const theme = createTheme({
